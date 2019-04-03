@@ -1,0 +1,6 @@
+.DS_Store
+fpm/*
+db/*
+files/*
+php/*
+cache/*
