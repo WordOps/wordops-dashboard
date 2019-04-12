@@ -2,4 +2,4 @@
 
 ## Credits
 
-Based on Argon dashboad template by [Creative Tim](https://www.creative-tim.com)
+Based on Argon dashboard template by [Creative Tim](https://www.creative-tim.com)
