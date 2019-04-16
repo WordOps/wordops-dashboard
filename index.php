@@ -328,8 +328,9 @@ $root = $_SERVER['HTTP_HOST'];
         </div>
       </div>
 
-   <div class="row">
+
      <div class="container">
+
           <div class="nav-wrapper">
     <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
         <li class="nav-item">
@@ -345,7 +346,7 @@ $root = $_SERVER['HTTP_HOST'];
         </li>
     </ul>
     </div>
-</div>
+
 </div>
 
     </div>
@@ -354,7 +355,7 @@ $root = $_SERVER['HTTP_HOST'];
 
       <!-- First TAB -->
       <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-ta">
-        <div class="container-fluid mt--7">
+        <div class="container-fluid mt--8">
           <div class="row">
             <div class="col-xl-8 mb-5 mb-xl-0">
               <div class="card">
@@ -535,7 +536,7 @@ $root = $_SERVER['HTTP_HOST'];
       </div>
       <!-- Second TAB -->
       <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-        <div class="container-fluid mt--7">
+        <div class="container-fluid mt--8">
           <div class="row">
             <div class="col mb-5 mb-xl-0">
               <div class="card">
@@ -555,7 +556,7 @@ $root = $_SERVER['HTTP_HOST'];
 							<div class="container">
 								<div class="card-deck">
 									<div class="card">
-										<div class="text-center">
+										<div class="text-center mt-4">
 											<i class="fas fa-database fa-6x"></i>
 											<div class="card-body">
 												<h4 class="card-title">phpMyAdmin</h4>
@@ -563,14 +564,14 @@ $root = $_SERVER['HTTP_HOST'];
 											</div>
 
 											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/db/pma/" target="_blank"  class="btn btn-primary btn-lg btn-block">
+												<a href="https://<?php echo $root; ?>/db/pma/" target="_blank" class="btn btn-outline-primary">
 													Open
 												</a>
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="text-center">
+										<div class="text-center mt-4">
 											<i class="fas fa-database fa-6x"></i>
 
 											<div class="card-body">
@@ -579,15 +580,15 @@ $root = $_SERVER['HTTP_HOST'];
 											</div>
 
 											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/db/adminer/" target="_blank">
-													<button type="button" class="btn btn-primary btn-lg btn-block">Open</button>
+												<a href="https://<?php echo $root; ?>/db/adminer/" target="_blank" class="btn btn-outline-primary">
+													Open
 												</a>
 
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="text-center">
+										<div class="text-center mt-4">
 											<i class="fas fa-database fa-6x"></i>
 
 											<div class="card-body">
@@ -598,8 +599,8 @@ $root = $_SERVER['HTTP_HOST'];
 											</div>
 
 											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/db/anemometer/" target="_blank">
-													<button type="button" class="btn btn-primary btn-lg btn-block">Open</button>
+												<a href="https://<?php echo $root; ?>/db/anemometer/" target="_blank" class="btn btn-outline-primary">
+													Open
 												</a>
 											</div>
 										</div>
@@ -615,7 +616,7 @@ $root = $_SERVER['HTTP_HOST'];
       </div>
 
       <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
-        <div class="container-fluid mt--7">
+        <div class="container-fluid mt--8">
           <div class="row">
             <div class="col mb-5 mb-xl-0">
               <div class="card">
@@ -634,7 +635,7 @@ $root = $_SERVER['HTTP_HOST'];
 							<div class="container">
 								<div class="card-deck">
 									<div class="card">
-										<div class="text-center">
+										<div class="text-center mt-4">
 											<i class="fas fa-server fa-6x"></i>
 											<div class="card-body">
 												<h4 class="card-title">Memcached</h4>
@@ -642,14 +643,14 @@ $root = $_SERVER['HTTP_HOST'];
 											</div>
 
 											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/cache/memcache/" target="_blank">
-													<button type="button" class="btn btn-primary btn-lg btn-block">Open</button>
+												<a href="https://<?php echo $root; ?>/cache/memcache/" target="_blank" class="btn btn-outline-primary">
+													Open
 												</a>
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="text-center">
+										<div class="text-center mt-4">
 											<i class="fas fa-server fa-6x"></i>
 
 											<div class="card-body">
@@ -658,15 +659,15 @@ $root = $_SERVER['HTTP_HOST'];
 											</div>
 
 											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/cache/redis/phpRedisAdmin/" target="_blank">
-													<button type="button" class="btn btn-primary btn-lg btn-block">Open</button>
+												<a href="https://<?php echo $root; ?>/cache/redis/phpRedisAdmin/" target="_blank" class="btn btn-outline-primary">
+												Open
 												</a>
 
 											</div>
 										</div>
 									</div>
 									<div class="card">
-										<div class="text-center">
+										<div class="text-center mt-4">
 											<i class="fas fa-server fa-6x"></i>
 
 											<div class="card-body">
@@ -677,8 +678,8 @@ $root = $_SERVER['HTTP_HOST'];
 											</div>
 
 											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/cache/opcache/opgui.php" target="_blank">
-													<button type="button" class="btn btn-primary btn-lg btn-block">Open</button>
+												<a href="https://<?php echo $root; ?>/cache/opcache/opgui.php" target="_blank"class="btn btn-outline-primary">
+													Open
 												</a>
 											</div>
 										</div>
