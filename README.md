@@ -5,3 +5,4 @@
 ## Credits
 
 Based on Argon dashboard template by [Creative Tim](https://www.creative-tim.com)
+Powered by [Netdata](https://github.com/netdata/netdata) Monitoring suite
