@@ -16,7 +16,6 @@ $root = $_SERVER['HTTP_HOST'];
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,21 +28,22 @@ $root = $_SERVER['HTTP_HOST'];
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
 
- <!-- Argon CSS -->
+  <!-- Argon CSS -->
   <link type="text/css" href="./assets/css/argon.min.css" rel="stylesheet">
   <script>
-    var netdataNoBootstrap=true;
-    var netdataNoFontAwesome=true;
+    var netdataNoBootstrap = true;
+    var netdataNoFontAwesome = true;
   </script>
-  <script type="text/javascript" src="https://<?php echo $root; ?>/netdata/dashboard.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+    src="https://<?php echo $root; ?>/netdata/dashboard.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
+  </script>
   <style>
-    #list-tab > li > a > svg, #sidenav-collapse-main > ul > li > a > svg {
-      margin-right:0.5em;
+    #list-tab>li>a>svg,
+    #sidenav-collapse-main>ul>li>a>svg {
+      margin-right: 0.5em;
     }
-
-    }
-
   </style>
 </head>
 
@@ -57,11 +57,12 @@ $root = $_SERVER['HTTP_HOST'];
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-      <a class="navbar-brand pt-0" href="https://<?php echo $root; ?>">
-        <img src="./assets/img/brand/logo.png" class="navbar-brand-img" alt="...">
+      <a class="navbar-brand pt-0"
+        href="https://<?php echo $root; ?>">
+        <img src="./assets/img/brand/logo.png" class="navbar-brand-img" alt="WordOps">
       </a>
       <!-- User -->
-      <ul class="nav align-items-center d-md-none">
+      <!-- <ul class="nav align-items-center d-md-none">
         <li class="nav-item dropdown">
           <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
@@ -107,7 +108,7 @@ $root = $_SERVER['HTTP_HOST'];
             </a>
           </div>
         </li>
-      </ul>
+      </ul> -->
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidenav-collapse-main">
         <!-- Collapse header -->
@@ -135,22 +136,30 @@ $root = $_SERVER['HTTP_HOST'];
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://<?php echo $root; ?>/files/" target="_blank" rel="noopener">
+            <a class="nav-link"
+              href="https://<?php echo $root; ?>/files/"
+              target="_blank" rel="noopener">
               <i class="fas fa-folder-open fa-lg"></i> File Manager
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://<?php echo $root;?>/php/info.php" target="_blank" rel="noopener">
+            <a class="nav-link"
+              href="https://<?php echo $root;?>/php/info.php"
+              target="_blank" rel="noopener">
               <i class="fab fa-php fa-lg"></i> PHP Info
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://<?php echo $root;?>/netdata/" target="_blank" rel="noopener">
+            <a class="nav-link"
+              href="https://<?php echo $root;?>/netdata/"
+              target="_blank" rel="noopener">
               <i class="fas fa-chart-bar fa-lg"></i> Monitoring
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://<?php echo $root;?>/vts_status" target="_blank" rel="noopener">
+            <a class="nav-link"
+              href="https://<?php echo $root;?>/vts_status"
+              target="_blank" rel="noopener">
               <i class="fas fa-list-alt fa-lg"></i> Nginx VTS
             </a>
           </li>
@@ -179,9 +188,20 @@ $root = $_SERVER['HTTP_HOST'];
               <i class="fas fa-comments fa-lg"></i> Forum
             </a>
           </li>
-                    <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="https://github.com/WordOps/WordOps" target="_blank" rel="noopener">
               <i class="fab fa-github fa-lg"></i> Github
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/WordOps_" target="_blank" rel="noopener">
+              <i class="fab fa-twitter-square fa-lg"></i> Twitter
+            </a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mastodon.top/@wordops" target="_blank" rel="noopener">
+              <i class="fab fa-mastodon fa-lg"></i> Mastodon
             </a>
           </li>
         </ul>
@@ -336,36 +356,41 @@ $root = $_SERVER['HTTP_HOST'];
       </div>
 
 
-     <div class="container">
+      <div class="container">
 
-          <div class="nav-wrapper">
-    <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active display-4" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
-              <i class="fas fa-server fa-lg"></i> Monitoring</a></li>
-        <li class="nav-item">
-            <a class="nav-link display-4" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">
-              <i class="fas fa-database fa-lg"></i> Database</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link display-4" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">
-              <i class="fas fa-rocket fa-lg"></i>  Cache</a>
-        </li>
-                <li class="nav-item">
-            <a class="nav-link display-4" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">
-               <i class="fab fa-php fa-lg"></i>  PHP</a>
-        </li>
-    </ul>
-    </div>
+        <div class="nav-wrapper">
+          <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active display-4" id="tabs-icons-text-1-tab" data-toggle="tab"
+                href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
+                <i class="fas fa-server fa-lg"></i> Monitoring</a></li>
+            <li class="nav-item">
+              <a class="nav-link display-4" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2"
+                role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">
+                <i class="fas fa-database fa-lg"></i> Database</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link display-4" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3"
+                role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">
+                <i class="fas fa-rocket fa-lg"></i> Cache</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link display-4" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4"
+                role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">
+                <i class="fab fa-php fa-lg"></i> PHP</a>
+            </li>
+          </ul>
+        </div>
 
-</div>
+      </div>
 
     </div>
 
     <div class="tab-content" id="nav-tabContent">
 
       <!-- First TAB -->
-      <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-ta">
+      <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel"
+        aria-labelledby="tabs-icons-text-1-ta">
         <div class="container-fluid mt--8">
           <div class="row">
             <div class="col-xl-8 mb-5 mb-xl-0">
@@ -376,7 +401,8 @@ $root = $_SERVER['HTTP_HOST'];
                       <h3 class="mb-0"><i class="fas fa-chart-bar fa-lg"></i> Main Metrics</h3>
                     </div>
                     <div class="col text-right">
-                      <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
+                      <a href="https://<?php echo $root;?>/netdata/"
+                        class="btn btn-sm btn-primary" target="_blank">See
                         all</a>
                     </div>
                   </div>
@@ -429,7 +455,8 @@ $root = $_SERVER['HTTP_HOST'];
                       <h3 class="mb-0"><i class="far fa-check-square fa-lg"></i> Status</h3>
                     </div>
                     <div class="col text-right">
-                      <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
+                      <a href="https://<?php echo $root;?>/netdata/"
+                        class="btn btn-sm btn-primary" target="_blank">See
                         all</a>
                     </div>
                   </div>
@@ -557,69 +584,73 @@ $root = $_SERVER['HTTP_HOST'];
                       <h3 class="mb-0">Database</h3>
                     </div>
                     <div class="col text-right">
-                      <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
+                      <a href="https://<?php echo $root;?>/netdata/"
+                        class="btn btn-sm btn-primary" target="_blank">See
                         all</a>
                     </div>
                   </div>
                 </div>
                 <div class="container-fluid">
-						<div class="row">
-							<div class="container">
-								<div class="card-deck">
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fas fa-database fa-6x"></i>
-											<div class="card-body">
-												<h4 class="card-title">phpMyAdmin</h4>
+                  <div class="row">
+                    <div class="container">
+                      <div class="card-deck">
+                        <div class="card">
+                          <div class="text-center mt-4">
+                            <i class="fas fa-database fa-6x"></i>
+                            <div class="card-body">
+                              <h4 class="card-title">phpMyAdmin</h4>
 
-											</div>
+                            </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/db/pma/" target="_blank" class="btn btn-outline-primary">
-													Open
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fas fa-database fa-6x"></i>
+                            <div class="card-footer">
+                              <a href="https://<?php echo $root; ?>/db/pma/"
+                                target="_blank" class="btn btn-outline-primary">
+                                Open
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="text-center mt-4">
+                            <i class="fas fa-database fa-6x"></i>
 
-											<div class="card-body">
-												<h4 class="card-title">Adminer</h4>
+                            <div class="card-body">
+                              <h4 class="card-title">Adminer</h4>
 
-											</div>
+                            </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/db/adminer/" target="_blank" class="btn btn-outline-primary">
-													Open
-												</a>
+                            <div class="card-footer">
+                              <a href="https://<?php echo $root; ?>/db/adminer/"
+                                target="_blank" class="btn btn-outline-primary">
+                                Open
+                              </a>
 
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fas fa-database fa-6x"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="text-center mt-4">
+                            <i class="fas fa-database fa-6x"></i>
 
-											<div class="card-body">
-												<h4 class="card-title">Anemometer</h4>
+                            <div class="card-body">
+                              <h4 class="card-title">Anemometer</h4>
 
 
 
-											</div>
+                            </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/db/anemometer/" target="_blank" class="btn btn-outline-primary">
-													Open
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-</div>
-						</div>
+                            <div class="card-footer">
+                              <a href="https://<?php echo $root; ?>/db/anemometer/"
+                                target="_blank" class="btn btn-outline-primary">
+                                Open
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -637,67 +668,71 @@ $root = $_SERVER['HTTP_HOST'];
                       <h3 class="mb-0">Cache</h3>
                     </div>
                     <div class="col text-right">
-                      <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
+                      <a href="https://<?php echo $root;?>/netdata/"
+                        class="btn btn-sm btn-primary" target="_blank">See
                         all</a>
                     </div>
                   </div>
                 </div>
-                						<div class="row">
-							<div class="container">
-								<div class="card-deck">
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fas fa-server fa-6x"></i>
-											<div class="card-body">
-												<h4 class="card-title">Memcached</h4>
+                <div class="row">
+                  <div class="container">
+                    <div class="card-deck">
+                      <div class="card">
+                        <div class="text-center mt-4">
+                          <i class="fas fa-server fa-6x"></i>
+                          <div class="card-body">
+                            <h4 class="card-title">Memcached</h4>
 
-											</div>
+                          </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/cache/memcache/" target="_blank" class="btn btn-outline-primary">
-													Open
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fas fa-server fa-6x"></i>
+                          <div class="card-footer">
+                            <a href="https://<?php echo $root; ?>/cache/memcache/"
+                              target="_blank" class="btn btn-outline-primary">
+                              Open
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="text-center mt-4">
+                          <i class="fas fa-server fa-6x"></i>
 
-											<div class="card-body">
-												<h4 class="card-title">Redis</h4>
+                          <div class="card-body">
+                            <h4 class="card-title">Redis</h4>
 
-											</div>
+                          </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/cache/redis/phpRedisAdmin/" target="_blank" class="btn btn-outline-primary">
-												Open
-												</a>
+                          <div class="card-footer">
+                            <a href="https://<?php echo $root; ?>/cache/redis/phpRedisAdmin/"
+                              target="_blank" class="btn btn-outline-primary">
+                              Open
+                            </a>
 
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fas fa-server fa-6x"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="text-center mt-4">
+                          <i class="fas fa-server fa-6x"></i>
 
-											<div class="card-body">
-												<h4 class="card-title">Opcache</h4>
+                          <div class="card-body">
+                            <h4 class="card-title">Opcache</h4>
 
 
 
-											</div>
+                          </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/cache/opcache/opgui.php" target="_blank"class="btn btn-outline-primary">
-													Open
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+                          <div class="card-footer">
+                            <a href="https://<?php echo $root; ?>/cache/opcache/opgui.php"
+                              target="_blank" class="btn btn-outline-primary">
+                              Open
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -706,7 +741,7 @@ $root = $_SERVER['HTTP_HOST'];
 
       </div>
 
-    <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
+      <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
         <div class="container-fluid mt--8">
           <div class="row">
             <div class="col mb-5 mb-xl-0">
@@ -717,69 +752,73 @@ $root = $_SERVER['HTTP_HOST'];
                       <h3 class="mb-0">PHP</h3>
                     </div>
                     <div class="col text-right">
-                      <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
+                      <a href="https://<?php echo $root;?>/netdata/"
+                        class="btn btn-sm btn-primary" target="_blank">See
                         all</a>
                     </div>
                   </div>
                 </div>
                 <div class="container-fluid">
-						<div class="row">
-							<div class="container">
-								<div class="card-deck">
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fab fa-php fa-6x"></i>
-											<div class="card-body">
-												<h4 class="card-title">Status PHP7.2-FPM</h4>
+                  <div class="row">
+                    <div class="container">
+                      <div class="card-deck">
+                        <div class="card">
+                          <div class="text-center mt-4">
+                            <i class="fab fa-php fa-6x"></i>
+                            <div class="card-body">
+                              <h4 class="card-title">Status PHP7.2-FPM</h4>
 
-											</div>
+                            </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/fpm/status/php72" target="_blank" class="btn btn-outline-primary">
-													Open
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fab fa-php fa-6x"></i>
+                            <div class="card-footer">
+                              <a href="https://<?php echo $root; ?>/fpm/status/php72"
+                                target="_blank" class="btn btn-outline-primary">
+                                Open
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="text-center mt-4">
+                            <i class="fab fa-php fa-6x"></i>
 
-											<div class="card-body">
-												<h4 class="card-title">Status PHP7.3-FPM</h4>
+                            <div class="card-body">
+                              <h4 class="card-title">Status PHP7.3-FPM</h4>
 
-											</div>
+                            </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/fpm/status/php73" target="_blank" class="btn btn-outline-primary">
-													Open
-												</a>
+                            <div class="card-footer">
+                              <a href="https://<?php echo $root; ?>/fpm/status/php73"
+                                target="_blank" class="btn btn-outline-primary">
+                                Open
+                              </a>
 
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="text-center mt-4">
-											<i class="fab fa-php fa-6x"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="text-center mt-4">
+                            <i class="fab fa-php fa-6x"></i>
 
-											<div class="card-body">
-												<h4 class="card-title">PHP Info</h4>
+                            <div class="card-body">
+                              <h4 class="card-title">PHP Info</h4>
 
 
 
-											</div>
+                            </div>
 
-											<div class="card-footer">
-												<a href="https://<?php echo $root; ?>/php/info.php" target="_blank" class="btn btn-outline-primary">
-													Open
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-</div>
-						</div>
+                            <div class="card-footer">
+                              <a href="https://<?php echo $root; ?>/php/info.php"
+                                target="_blank" class="btn btn-outline-primary">
+                                Open
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -794,7 +833,8 @@ $root = $_SERVER['HTTP_HOST'];
         <div class="col-xl-6">
           <div class="copyright text-center text-xl-left text-muted ml-3">
             &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative
-              Tim</a> modified by <a href="https://virtubox.net" class="font-weight-bold" target="_blank">VirtuBox</a>
+              Tim</a> modified by <a href="https://virtubox.net" class="font-weight-bold" target="_blank">VirtuBox</a>.
+            Monitoring powered by <a href="https://my-netdata.io/" class="font-weight-bold">Netdata</a>
           </div>
         </div>
         <div class="col-xl-6">
@@ -818,10 +858,16 @@ $root = $_SERVER['HTTP_HOST'];
   </div>
   </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>  <!-- Argon JS -->
-<script src="./assets/js/argon.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script> <!-- Argon JS -->
+  <script src="./assets/js/argon.min.js"></script>
 
 </body>
 
