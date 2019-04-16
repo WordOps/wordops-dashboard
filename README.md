@@ -1,6 +1,6 @@
 # wordops-dashboard
 
-![wo-dashboard](https://raw.githubusercontent.com/WordOps/wordops-dashboard/master/wo-dashboard.png)
+![wo-dashboard](https://raw.githubusercontent.com/WordOps/wordops-dashboard/master/assets/img/wo-dashboard.png)
 
 ## Credits
 
