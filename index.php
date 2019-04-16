@@ -16,6 +16,7 @@ $root = $_SERVER['HTTP_HOST'];
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -274,8 +275,6 @@ $root = $_SERVER['HTTP_HOST'];
                           data-height="320" data-width="100%" data-points="60" data-after="-60"></div>
                       </span>
                     </div>
-
-
                   </div>
                 </div>
               </div>
@@ -292,9 +291,7 @@ $root = $_SERVER['HTTP_HOST'];
                           data-colors="#0099C6" role="application"></div>
                       </span>
                     </div>
-
                   </div>
-
                 </div>
               </div>
             </div>
@@ -303,7 +300,6 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-
                       <span class="h2 font-weight-bold mb-0">
                         <div class="netdata-container-gauge" data-netdata="nginx_local.requests" data-dimensions=""
                           data-height="270" data-width="100%" data-chart-library="gauge" data-gauge-adjust="width"
@@ -311,7 +307,6 @@ $root = $_SERVER['HTTP_HOST'];
                           data-colors="#66AA00" role="application" style="will-change: transform;"></div>
                       </span>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -328,7 +323,6 @@ $root = $_SERVER['HTTP_HOST'];
                           data-colors="" role="application" style="width: 12%; will-change: transform;"></div>
                       </span>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -345,9 +339,7 @@ $root = $_SERVER['HTTP_HOST'];
                           data-colors="" role="application" style="width: 12%; will-change: transform;"></div>
                       </span>
                     </div>
-
                   </div>
-
                 </div>
               </div>
             </div>
@@ -355,9 +347,7 @@ $root = $_SERVER['HTTP_HOST'];
         </div>
       </div>
 
-
       <div class="container">
-
         <div class="nav-wrapper">
           <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
             <li class="nav-item">
@@ -395,10 +385,10 @@ $root = $_SERVER['HTTP_HOST'];
           <div class="row">
             <div class="col-xl-8 mb-5 mb-xl-0">
               <div class="card">
-                <div class="card-header border-0">
+                <div class="card-header shadow border-0">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0"><i class="fas fa-chart-bar fa-lg"></i> Main Metrics</h3>
+                      <h3 class="mb-0 "><i class="fas fa-chart-bar fa-lg"></i> Main Metrics</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/"
@@ -407,15 +397,12 @@ $root = $_SERVER['HTTP_HOST'];
                     </div>
                   </div>
                 </div>
-                <div class="card-header bg-transparent">
+                <div class="card-header">
                   <div class="row align-items-center">
                     <div class="table-responsive">
                       <table class="table table-striped table-bordered table-sm">
-
                         <tbody>
-
                           <tr>
-
                             <td class="bg-white">
                               <div data-legend="yes" data-netdata="system.cpu" data-dimensions="user"
                                 data-chart-library="dygraph" data-before="0" data-after="-480" data-width="100%"
@@ -448,11 +435,11 @@ $root = $_SERVER['HTTP_HOST'];
               </div>
             </div>
             <div class="col-xl-4">
-              <div class="card shadow">
-                <div class="card-header border-0">
+              <div class="card bg-default shadow">
+                <div class="card-header bg-transparent border-0">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0"><i class="far fa-check-square fa-lg"></i> Status</h3>
+                      <h3 class="mb-0 text-white"><i class="far fa-check-square fa-lg"></i> Status</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/"
@@ -463,11 +450,11 @@ $root = $_SERVER['HTTP_HOST'];
                 </div>
                 <div class="table-responsive">
                   <!-- Projects table -->
-                  <table class="table align-items-center table-flush">
-                    <thead class="thead-light">
+                  <table class="table align-items-center table-dark table-flush">
+                    <thead class="thead-dark">
                       <tr>
-                        <th scope="col">Referral</th>
-                        <th scope="col">Visitors</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -504,10 +491,8 @@ $root = $_SERVER['HTTP_HOST'];
                         <th scope="row">
                           RAM in use
                         </th>
-
                         <td>
                           <div class="d-flex align-items-center">
-
                             <div>
                               <embed
                                 src="https://<?php echo $root; ?>/netdata/api/v1/badge.svg?chart=system.ram&alarm=ram_in_use&refresh=auto"
@@ -520,10 +505,8 @@ $root = $_SERVER['HTTP_HOST'];
                         <th scope="row">
                           RAM available
                         </th>
-
                         <td>
                           <div class="d-flex align-items-center">
-
                             <div>
                               <embed
                                 src="https://<?php echo $root; ?>/netdata/api/v1/badge.svg?chart=mem.available&alarm=ram_available&refresh=auto"
@@ -536,7 +519,6 @@ $root = $_SERVER['HTTP_HOST'];
                         <th scope="row">
                           Disk Usage
                         </th>
-
                         <td>
                           <div class="d-flex align-items-center">
                             <div>
@@ -551,15 +533,12 @@ $root = $_SERVER['HTTP_HOST'];
                         <th scope="row">
                           System Entropy
                         </th>
-
                         <td>
                           <div class="d-flex align-items-center">
                             <div>
-
                               <embed
                                 src="https://<?php echo $root; ?>/netdata/api/v1/badge.svg?chart=system.entropy&alarm=lowest_entropy&refresh=auto"
                                 type="image/svg+xml" height="20" />
-
                             </div>
                           </div>
                         </td>
@@ -578,7 +557,7 @@ $root = $_SERVER['HTTP_HOST'];
           <div class="row">
             <div class="col mb-5 mb-xl-0">
               <div class="card">
-                <div class="card-header border-0">
+                <div class="card-header shadow border-0 mb-4">
                   <div class="row align-items-center">
                     <div class="col">
                       <h3 class="mb-0">Database</h3>
@@ -593,15 +572,13 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="container-fluid">
                   <div class="row">
                     <div class="container">
-                      <div class="card-deck">
-                        <div class="card">
-                          <div class="text-center mt-4">
+                      <div class="card-deck pb-8">
+                        <div class="card bg-default">
+                          <div class="text-center mt-4 text-white">
                             <i class="fas fa-database fa-6x"></i>
                             <div class="card-body">
-                              <h4 class="card-title">phpMyAdmin</h4>
-
+                              <h4 class="card-title text-white">phpMyAdmin</h4>
                             </div>
-
                             <div class="card-footer">
                               <a href="https://<?php echo $root; ?>/db/pma/"
                                 target="_blank" class="btn btn-outline-primary">
@@ -610,35 +587,26 @@ $root = $_SERVER['HTTP_HOST'];
                             </div>
                           </div>
                         </div>
-                        <div class="card">
-                          <div class="text-center mt-4">
+                        <div class="card bg-default">
+                          <div class="text-center mt-4 text-white">
                             <i class="fas fa-database fa-6x"></i>
-
                             <div class="card-body">
-                              <h4 class="card-title">Adminer</h4>
-
+                              <h4 class="card-title text-white">Adminer</h4>
                             </div>
-
                             <div class="card-footer">
                               <a href="https://<?php echo $root; ?>/db/adminer/"
                                 target="_blank" class="btn btn-outline-primary">
                                 Open
                               </a>
-
                             </div>
                           </div>
                         </div>
-                        <div class="card">
-                          <div class="text-center mt-4">
+                        <div class="card bg-default">
+                          <div class="text-center mt-4 text-white">
                             <i class="fas fa-database fa-6x"></i>
-
                             <div class="card-body">
-                              <h4 class="card-title">Anemometer</h4>
-
-
-
+                              <h4 class="card-title text-white">Anemometer</h4>
                             </div>
-
                             <div class="card-footer">
                               <a href="https://<?php echo $root; ?>/db/anemometer/"
                                 target="_blank" class="btn btn-outline-primary">
@@ -656,13 +624,13 @@ $root = $_SERVER['HTTP_HOST'];
           </div>
         </div>
       </div>
-
+      <!-- tab 3 -->
       <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
         <div class="container-fluid mt--8">
           <div class="row">
             <div class="col mb-5 mb-xl-0">
               <div class="card">
-                <div class="card-header border-0">
+                <div class="card-header shadow border-0 mb-4">
                   <div class="row align-items-center">
                     <div class="col">
                       <h3 class="mb-0">Cache</h3>
@@ -676,15 +644,13 @@ $root = $_SERVER['HTTP_HOST'];
                 </div>
                 <div class="row">
                   <div class="container">
-                    <div class="card-deck">
-                      <div class="card">
-                        <div class="text-center mt-4">
+                    <div class="card-deck pb-8">
+                      <div class="card bg-default">
+                        <div class="text-center mt-4 text-white">
                           <i class="fas fa-server fa-6x"></i>
                           <div class="card-body">
-                            <h4 class="card-title">Memcached</h4>
-
+                            <h4 class="card-title text-white">Memcached</h4>
                           </div>
-
                           <div class="card-footer">
                             <a href="https://<?php echo $root; ?>/cache/memcache/"
                               target="_blank" class="btn btn-outline-primary">
@@ -693,35 +659,26 @@ $root = $_SERVER['HTTP_HOST'];
                           </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card bg-default">
                         <div class="text-center mt-4">
-                          <i class="fas fa-server fa-6x"></i>
-
+                          <i class="fas fa-server fa-6x text-white"></i>
                           <div class="card-body">
-                            <h4 class="card-title">Redis</h4>
-
+                            <h4 class="card-title text-white">Redis</h4>
                           </div>
-
                           <div class="card-footer">
                             <a href="https://<?php echo $root; ?>/cache/redis/phpRedisAdmin/"
                               target="_blank" class="btn btn-outline-primary">
                               Open
                             </a>
-
                           </div>
                         </div>
                       </div>
-                      <div class="card">
-                        <div class="text-center mt-4">
+                      <div class="card bg-default">
+                        <div class="text-center mt-4 text-white">
                           <i class="fas fa-server fa-6x"></i>
-
                           <div class="card-body">
-                            <h4 class="card-title">Opcache</h4>
-
-
-
+                            <h4 class="card-title text-white">Opcache</h4>
                           </div>
-
                           <div class="card-footer">
                             <a href="https://<?php echo $root; ?>/cache/opcache/opgui.php"
                               target="_blank" class="btn btn-outline-primary">
@@ -734,19 +691,17 @@ $root = $_SERVER['HTTP_HOST'];
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-
       </div>
-
+      <!-- tab 4 -->
       <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
         <div class="container-fluid mt--8">
           <div class="row">
             <div class="col mb-5 mb-xl-0">
-              <div class="card">
-                <div class="card-header border-0">
+              <div class="card shadow">
+                <div class="card-header shadow border-0 mb-4">
                   <div class="row align-items-center">
                     <div class="col">
                       <h3 class="mb-0">PHP</h3>
@@ -761,12 +716,12 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="container-fluid">
                   <div class="row">
                     <div class="container">
-                      <div class="card-deck">
-                        <div class="card">
-                          <div class="text-center mt-4">
+                      <div class="card-deck pb-8">
+                        <div class="card bg-default">
+                          <div class="text-center mt-4 text-white">
                             <i class="fab fa-php fa-6x"></i>
                             <div class="card-body">
-                              <h4 class="card-title">Status PHP7.2-FPM</h4>
+                              <h4 class="card-title text-white">Status PHP7.2-FPM</h4>
 
                             </div>
 
@@ -778,12 +733,12 @@ $root = $_SERVER['HTTP_HOST'];
                             </div>
                           </div>
                         </div>
-                        <div class="card">
-                          <div class="text-center mt-4">
+                        <div class="card bg-default">
+                          <div class="text-center mt-4 text-white">
                             <i class="fab fa-php fa-6x"></i>
 
                             <div class="card-body">
-                              <h4 class="card-title">Status PHP7.3-FPM</h4>
+                              <h4 class="card-title text-white">Status PHP7.3-FPM</h4>
 
                             </div>
 
@@ -796,12 +751,12 @@ $root = $_SERVER['HTTP_HOST'];
                             </div>
                           </div>
                         </div>
-                        <div class="card">
-                          <div class="text-center mt-4">
+                        <div class="card bg-default">
+                          <div class="text-center mt-4 text-white">
                             <i class="fab fa-php fa-6x"></i>
 
                             <div class="card-body">
-                              <h4 class="card-title">PHP Info</h4>
+                              <h4 class="card-title text-white">PHP Info</h4>
 
 
 
