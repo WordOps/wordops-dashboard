@@ -232,7 +232,7 @@ $root = $_SERVER['HTTP_HOST'];
     </nav>
     <!-- Header -->
 
-    <div class="header bg-gradient-success pb-8 pt-5 pt-md-8">
+    <div class="header bg-gradient-success pb-8 pt-4 pt-md-6">
       <div class="container-fluid">
         <div class="header-body">
           <!-- Card stats -->
