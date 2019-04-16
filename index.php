@@ -8,7 +8,7 @@
  * Copyright (c) 2019 - WordOps
  * This dashboard template is licensed under M.I.T
  * -------------------------------------------------------------------------
- * Version 1.0 - 2019-04-03
+ * Version 1.0 - 2019-04-16
  * -------------------------------------------------------------------------
  */
 $root = $_SERVER['HTTP_HOST'];
@@ -38,10 +38,12 @@ $root = $_SERVER['HTTP_HOST'];
   <script type="text/javascript" src="https://<?php echo $root; ?>/netdata/dashboard.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
   <style>
-    .svg-inline--fa {
-      padding-right: 0.3em;
-      font-size: 1.7em;
+    #list-tab > li > a > svg, #sidenav-collapse-main > ul > li > a > svg {
+      margin-right:0.5em;
     }
+
+    }
+
   </style>
 </head>
 
@@ -129,27 +131,27 @@ $root = $_SERVER['HTTP_HOST'];
         <ul class="navbar-nav" id="list-tab" role="tablist">
           <li class="nav-item">
             <a class="nav-link list-group-item-action active" aria-selected="true">
-              <i class="fas fa-home"></i> Dashboard
+              <i class="fas fa-home fa-lg"></i> Dashboard
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://<?php echo $root; ?>/files/" target="_blank" rel="noopener">
-              <i class="fas fa-folder-open"></i> File Manager
+              <i class="fas fa-folder-open fa-lg"></i> File Manager
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://<?php echo $root;?>/php/info.php" target="_blank" rel="noopener">
-              <i class="fab fa-php"></i> PHP Info
+              <i class="fab fa-php fa-lg"></i> PHP Info
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://<?php echo $root;?>/netdata/" target="_blank" rel="noopener">
-              <i class="fas fa-chart-bar"></i> Monitoring
+              <i class="fas fa-chart-bar fa-lg"></i> Monitoring
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://<?php echo $root;?>/vts_status" target="_blank" rel="noopener">
-              <i class="fas fa-list-alt"></i> Nginx VTS
+              <i class="fas fa-list-alt fa-lg"></i> Nginx VTS
             </a>
           </li>
         </ul>
@@ -164,17 +166,22 @@ $root = $_SERVER['HTTP_HOST'];
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://wordops.net" target="_blank" rel="noopener">
-              <i class="fas fa-rocket"></i> WordOps.net
+              <i class="fas fa-rocket fa-lg"></i> WordOps.net
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://docs.wordops.net" target="_blank" rel="noopener">
-              <i class="fas fa-book"></i> Documentation
+              <i class="fas fa-book fa-lg"></i> Documentation
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://community.wordops.net" target="_blank" rel="noopener">
-              <i class="fas fa-comments"></i> Forum
+              <i class="fas fa-comments fa-lg"></i> Forum
+            </a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="https://github.com/WordOps/WordOps" target="_blank" rel="noopener">
+              <i class="fab fa-github fa-lg"></i> Github
             </a>
           </li>
         </ul>
@@ -334,15 +341,19 @@ $root = $_SERVER['HTTP_HOST'];
           <div class="nav-wrapper">
     <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
-              <i class="fas fa-server"></i> Monitoring</a></li>
+            <a class="nav-link active display-4" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true">
+              <i class="fas fa-server fa-lg"></i> Monitoring</a></li>
         <li class="nav-item">
-            <a class="nav-link" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">
-              <i class="fas fa-database"></i> Database</a>
+            <a class="nav-link display-4" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">
+              <i class="fas fa-database fa-lg"></i> Database</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">
-              <i class="fas fa-database"></i>  Cache</a>
+            <a class="nav-link display-4" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false">
+              <i class="fas fa-rocket fa-lg"></i>  Cache</a>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link display-4" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false">
+               <i class="fab fa-php fa-lg"></i>  PHP</a>
         </li>
     </ul>
     </div>
@@ -362,7 +373,7 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="card-header border-0">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0">Main Metrics</h3>
+                      <h3 class="mb-0"><i class="fas fa-chart-bar fa-lg"></i> Main Metrics</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
@@ -415,7 +426,7 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="card-header border-0">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0">Other Metrics</h3>
+                      <h3 class="mb-0"><i class="far fa-check-square fa-lg"></i> Status</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
@@ -692,20 +703,102 @@ $root = $_SERVER['HTTP_HOST'];
             </div>
           </div>
         </div>
+
+      </div>
+
+    <div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
+        <div class="container-fluid mt--8">
+          <div class="row">
+            <div class="col mb-5 mb-xl-0">
+              <div class="card">
+                <div class="card-header border-0">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h3 class="mb-0">PHP</h3>
+                    </div>
+                    <div class="col text-right">
+                      <a href="https://<?php echo $root;?>/netdata/" class="btn btn-sm btn-primary" target="_blank">See
+                        all</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid">
+						<div class="row">
+							<div class="container">
+								<div class="card-deck">
+									<div class="card">
+										<div class="text-center mt-4">
+											<i class="fab fa-php fa-6x"></i>
+											<div class="card-body">
+												<h4 class="card-title">Status PHP7.2-FPM</h4>
+
+											</div>
+
+											<div class="card-footer">
+												<a href="https://<?php echo $root; ?>/fpm/status/php72" target="_blank" class="btn btn-outline-primary">
+													Open
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="text-center mt-4">
+											<i class="fab fa-php fa-6x"></i>
+
+											<div class="card-body">
+												<h4 class="card-title">Status PHP7.3-FPM</h4>
+
+											</div>
+
+											<div class="card-footer">
+												<a href="https://<?php echo $root; ?>/fpm/status/php73" target="_blank" class="btn btn-outline-primary">
+													Open
+												</a>
+
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="text-center mt-4">
+											<i class="fab fa-php fa-6x"></i>
+
+											<div class="card-body">
+												<h4 class="card-title">PHP Info</h4>
+
+
+
+											</div>
+
+											<div class="card-footer">
+												<a href="https://<?php echo $root; ?>/php/info.php" target="_blank" class="btn btn-outline-primary">
+													Open
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+</div>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="footer">
       <div class="row align-items-center justify-content-xl-between">
         <div class="col-xl-6">
-          <div class="copyright text-center text-xl-left text-muted">
+          <div class="copyright text-center text-xl-left text-muted ml-3">
             &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative
               Tim</a> modified by <a href="https://virtubox.net" class="font-weight-bold" target="_blank">VirtuBox</a>
           </div>
         </div>
         <div class="col-xl-6">
-          <!--            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+          <!-- <ul class="nav nav-footer justify-content-center justify-content-xl-end">
               <li class="nav-item">
                 <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
               </li>
@@ -724,10 +817,6 @@ $root = $_SERVER['HTTP_HOST'];
     </footer>
   </div>
   </div>
-  <!-- Argon Scripts -->
-  <!-- Core -->
-  <!--<script src="./assets/vendor/jquery/dist/jquery.min.js"></script>-->
- <!--<script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
