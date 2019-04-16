@@ -260,7 +260,7 @@ $root = $_SERVER['HTTP_HOST'];
     </nav>
     <!-- Header -->
 
-    <div class="header bg-gradient-success pb-8 pt-4 pt-md-6">
+    <div class="header bg-gradient-info pb-8 pt-4 pt-md-6">
       <div class="container-fluid">
         <div class="header-body">
           <!-- Card stats -->
@@ -435,11 +435,11 @@ $root = $_SERVER['HTTP_HOST'];
               </div>
             </div>
             <div class="col-xl-4">
-              <div class="card bg-default shadow">
-                <div class="card-header bg-transparent border-0">
+              <div class="card shadow">
+                <div class="card-header shadow border-0">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0 text-white"><i class="far fa-check-square fa-lg"></i> Status</h3>
+                      <h3 class="mb-0"><i class="far fa-check-square fa-lg"></i> Status</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/"
@@ -450,8 +450,8 @@ $root = $_SERVER['HTTP_HOST'];
                 </div>
                 <div class="table-responsive">
                   <!-- Projects table -->
-                  <table class="table align-items-center table-dark table-flush">
-                    <thead class="thead-dark">
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
                       <tr>
                         <th scope="col"></th>
                         <th scope="col"></th>
@@ -560,7 +560,7 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="card-header shadow border-0 mb-4">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0">Database</h3>
+                      <h3 class="mb-0"><i class="fas fa-database fa-lg"></i> Database</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/"
@@ -573,7 +573,7 @@ $root = $_SERVER['HTTP_HOST'];
                   <div class="row">
                     <div class="container">
                       <div class="card-deck pb-8">
-                        <div class="card bg-default">
+                        <div class="card bg-success">
                           <div class="text-center mt-4 text-white">
                             <i class="fas fa-database fa-6x"></i>
                             <div class="card-body">
@@ -587,7 +587,7 @@ $root = $_SERVER['HTTP_HOST'];
                             </div>
                           </div>
                         </div>
-                        <div class="card bg-default">
+                        <div class="card bg-success">
                           <div class="text-center mt-4 text-white">
                             <i class="fas fa-database fa-6x"></i>
                             <div class="card-body">
@@ -601,7 +601,7 @@ $root = $_SERVER['HTTP_HOST'];
                             </div>
                           </div>
                         </div>
-                        <div class="card bg-default">
+                        <div class="card bg-success">
                           <div class="text-center mt-4 text-white">
                             <i class="fas fa-database fa-6x"></i>
                             <div class="card-body">
@@ -633,7 +633,7 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="card-header shadow border-0 mb-4">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0">Cache</h3>
+                      <h3 class="mb-0"><i class="fas fa-rocket fa-lg"></i> Cache</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/"
@@ -645,7 +645,7 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="row">
                   <div class="container">
                     <div class="card-deck pb-8">
-                      <div class="card bg-default">
+                      <div class="card bg-danger">
                         <div class="text-center mt-4 text-white">
                           <i class="fas fa-server fa-6x"></i>
                           <div class="card-body">
@@ -659,7 +659,7 @@ $root = $_SERVER['HTTP_HOST'];
                           </div>
                         </div>
                       </div>
-                      <div class="card bg-default">
+                      <div class="card bg-danger">
                         <div class="text-center mt-4">
                           <i class="fas fa-server fa-6x text-white"></i>
                           <div class="card-body">
@@ -673,7 +673,7 @@ $root = $_SERVER['HTTP_HOST'];
                           </div>
                         </div>
                       </div>
-                      <div class="card bg-default">
+                      <div class="card bg-danger">
                         <div class="text-center mt-4 text-white">
                           <i class="fas fa-server fa-6x"></i>
                           <div class="card-body">
@@ -704,7 +704,7 @@ $root = $_SERVER['HTTP_HOST'];
                 <div class="card-header shadow border-0 mb-4">
                   <div class="row align-items-center">
                     <div class="col">
-                      <h3 class="mb-0">PHP</h3>
+                      <h3 class="mb-0"><i class="fab fa-php fa-lg"></i> PHP</h3>
                     </div>
                     <div class="col text-right">
                       <a href="https://<?php echo $root;?>/netdata/"
@@ -717,11 +717,11 @@ $root = $_SERVER['HTTP_HOST'];
                   <div class="row">
                     <div class="container">
                       <div class="card-deck pb-8">
-                        <div class="card bg-default">
+                        <div class="card bg-info">
                           <div class="text-center mt-4 text-white">
                             <i class="fab fa-php fa-6x"></i>
                             <div class="card-body">
-                              <h4 class="card-title text-white">Status PHP7.2-FPM</h4>
+                              <h4 class="card-title text-white">Status PHP-FPM 7.2</h4>
 
                             </div>
 
@@ -733,12 +733,12 @@ $root = $_SERVER['HTTP_HOST'];
                             </div>
                           </div>
                         </div>
-                        <div class="card bg-default">
+                        <div class="card bg-info">
                           <div class="text-center mt-4 text-white">
                             <i class="fab fa-php fa-6x"></i>
 
                             <div class="card-body">
-                              <h4 class="card-title text-white">Status PHP7.3-FPM</h4>
+                              <h4 class="card-title text-white">Status PHP-FPM 7.3</h4>
 
                             </div>
 
@@ -751,7 +751,7 @@ $root = $_SERVER['HTTP_HOST'];
                             </div>
                           </div>
                         </div>
-                        <div class="card bg-default">
+                        <div class="card bg-info">
                           <div class="text-center mt-4 text-white">
                             <i class="fab fa-php fa-6x"></i>
 
