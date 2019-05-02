@@ -2,11 +2,7 @@
 
 ![wo-dashboard](https://raw.githubusercontent.com/WordOps/wordops-dashboard/master/assets/img/wo-dashboard.png)
 
-## Manual installation
-
-```bash
-curl -sL https://github.com/WordOps/wordops-dashboard/releases/download/v1.0/wo-dashboard.tar.gz | /bin/tar zxf - -C /var/www/22222/htdocs
-```
+Demo available on : [demo.wordops.eu](https://demo.wordops.eu)
 
 ## Credits
 
