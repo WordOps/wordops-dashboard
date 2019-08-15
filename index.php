@@ -26,9 +26,7 @@ $root = $_SERVER['HTTP_HOST'];
   <!-- Favicon -->
   <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <!-- Icons -->
-
+  <link type="text/css" href="./assets/css/gfonts.css" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="./assets/css/argon.min.css" rel="stylesheet">
   <script>
