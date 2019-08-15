@@ -8,7 +8,7 @@
  * Copyright (c) 2019 - WordOps
  * This dashboard template is licensed under M.I.T
  * -------------------------------------------------------------------------
- * Version 1.0 - 2019-04-16
+ * Version 1.4 - 2019-08-15
  * -------------------------------------------------------------------------
  */
 $root = $_SERVER['HTTP_HOST'];
@@ -37,7 +37,7 @@ $root = $_SERVER['HTTP_HOST'];
   </script>
   <script type="text/javascript"
     src="https://<?php echo $root; ?>/netdata/dashboard.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+  <script defer src="https://use.fontawesome.com/releases/v5.10.1/js/all.js"
     integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
   </script>
   <style>
@@ -813,14 +813,11 @@ $root = $_SERVER['HTTP_HOST'];
   </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <script src="https://<?php echo $root;?>/assets/js/jquery-3.3.1.slim.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  <script src="https://<?php echo $root;?>/assets/js/popper.min.js">
   </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  <script src="https://<?php echo $root; ?>/assets/js/bootstrap.min.js">
   </script> <!-- Argon JS -->
   <script src="./assets/js/argon.min.js"></script>
 
