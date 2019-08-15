@@ -1,6 +1,6 @@
 # wordops-dashboard
 
-![wo-dashboard](https://raw.githubusercontent.com/WordOps/wordops-dashboard/master/assets/img/wo-dashboard.png)
+![wo-dashboard](https://img.virtubox.net/images/2019/08/06/ezgif-2-25972e04a434.gif)
 
 Demo available on : [demo.wordops.eu](https://demo.wordops.eu)
 
